@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ArrowLeft, BookOpen, Lock } from 'lucide-react';
 import AncientStory from './AncientStory';
 import MedievalStory from './MedievalStory';
-import ExplorationStory from './ExplorationStory'; // I've added this line
+import ModernStory from './ModernStory';
 
 const StorySelection = ({ timeline, onBack }) => {
   const [selectedStory, setSelectedStory] = useState(null);
@@ -35,10 +35,9 @@ const StorySelection = ({ timeline, onBack }) => {
         id: 'voyage',
         title: 'Voyage of the Unknown',
         description: 'Sail with explorers to new worlds. Face ethical dilemmas about discovery and encounters with Indigenous peoples.',
-        difficulty: 'Hard',
+        difficulty: 'Medium',
         themes: ['Ethics', 'Discovery', 'Culture'],
-        available: true, // Updated this to true
-        component: ExplorationStory // Linked the new component
+        available: false
       }
     ],
     revolution: [
@@ -55,10 +54,11 @@ const StorySelection = ({ timeline, onBack }) => {
       {
         id: 'chernobyl',
         title: 'Chernobyl Disaster',
-        description: 'Respond to an environmental catastrophe. Face decisions about survival, ethical responsibility, and human cost.',
+        description: 'Respond to an environmental catastrophe. Face decisions about survival, ethical responsibility, and human cost as a nuclear engineer during history\'s worst nuclear accident.',
         difficulty: 'Very Hard',
-        themes: ['Responsibility', 'Survival', 'Ethics'],
-        available: false
+        themes: ['Responsibility', 'Survival', 'Truth'],
+        available: true,
+        component: ModernStory
       }
     ]
   };
