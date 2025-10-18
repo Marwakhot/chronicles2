@@ -1,7 +1,7 @@
-total_opposition: {
+    total_opposition: {
       title: "The Price of Principle",
       date: "July 1519 - Final Confrontation",
-      text: "You refuse to back down on the ceremony issue. 'Captain Torres, if we proceed with this farce, we betray everything honorable about Spanish exploration. I cannot and will not support it.'\n\nVásquez draws his sword. 'Then you're a traitor!'\n\nCaptain Torres must make a choice. After long deliberation, he sides with you. 'We'll proceed without the claiming ceremony. Diego is right—we can establish presence without conquest.'\n\nVásquez and half the crew mutiny. A brief, violent confrontation erupts. You fight alongside Torres and loyal crew. The mutiny is suppressed, but many die, including Captain Torres.\n\nYou're left in command by default, with a divided crew and a mission in chaos. You choose to end the expedition, returning to Spain with what maps and knowledge you have.\n\nYou're court-martialed for the failed expedition but ultimately acquitted when your journals reveal the truth of the mutiny.",
+      text: "You refuse to back down on the ceremony issue. Captain Torres must make a choice. After long deliberation, he sides with you. The ceremony is cancelled.\n\nVásquez and half the crew mutiny. A brief, violent confrontation erupts. You fight alongside Torres and loyal crew. The mutiny is suppressed, but many die, including Captain Torres.\n\nYou are left in command by default, with a divided crew and a mission in chaos. You choose to end the expedition, returning to Spain with what maps and knowledge you have.\n\nYou are court-martialed for the failed expedition but ultimately acquitted when your journals reveal the truth of the mutiny.",
       choices: [
         {
           text: "Accept acquittal and continue advocating for reform",
