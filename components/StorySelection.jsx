@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ArrowLeft, BookOpen, Lock } from 'lucide-react';
 import AncientStory from './AncientStory';
 import MedievalStory from './MedievalStory';
-import ExplorationStory from './ExplorationStory';
+import ExplorationStory from './ExplorationStory'; // I've added this line
 
 const StorySelection = ({ timeline, onBack }) => {
   const [selectedStory, setSelectedStory] = useState(null);
@@ -34,11 +34,11 @@ const StorySelection = ({ timeline, onBack }) => {
       {
         id: 'voyage',
         title: 'Voyage of the Unknown',
-        description: 'Sail with Spanish explorers to the Pacific in 1519. Face profound ethical dilemmas about discovery, conquest, and your treatment of the indigenous Awahari people. Will you be a bridge-builder, exploiter, or something in between?',
-        difficulty: 'Medium',
+        description: 'Sail with explorers to new worlds. Face ethical dilemmas about discovery and encounters with Indigenous peoples.',
+        difficulty: 'Hard',
         themes: ['Ethics', 'Discovery', 'Culture'],
-        available: true,
-        component: ExplorationStory
+        available: true, // Updated this to true
+        component: ExplorationStory // Linked the new component
       }
     ],
     revolution: [
