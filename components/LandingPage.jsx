@@ -5,18 +5,25 @@ const LandingPage = ({ onEnter }) => {
     <div className="min-h-screen bg-gradient-to-br from-amber-900 via-stone-900 to-black flex items-center justify-center relative overflow-hidden">
       {/* Animated background particles */}
       <div className="absolute inset-0 opacity-20">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-amber-400 rounded-full animate-pulse"
-            style={{
-              left: ${Math.random() * 100}%,
-              top: ${Math.random() * 100}%,
-              animationDelay: ${Math.random() * 3}s,
-              animationDuration: ${2 + Math.random() * 3}s
-            }}
-          />
-        ))}
+        {[...Array(20)].map((_, i) => {
+          const left = Math.random() * 100;
+          const top = Math.random() * 100;
+          const delay = Math.random() * 3;
+          const duration = 2 + Math.random() * 3;
+          
+          return (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-amber-400 rounded-full animate-pulse"
+              style={{
+                left: `${left}%`,
+                top: `${top}%`,
+                animationDelay: `${delay}s`,
+                animationDuration: `${duration}s`
+              }}
+            />
+          );
+        })}
       </div>
 
       {/* Large Ornate Clock Background */}
