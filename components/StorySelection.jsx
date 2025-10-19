@@ -51,7 +51,7 @@ const StorySelection = ({ timeline, onBack }) => {
     available: true,
     component: IndustrialStory
   }
-]
+],
     modern: [
       {
         id: 'chernobyl',
