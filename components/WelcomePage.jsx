@@ -51,7 +51,7 @@ const WelcomePage = ({ onContinue }) => {
           <div className="bg-stone-900/60 backdrop-blur-sm border-2 border-amber-800/60 rounded-xl p-10 space-y-6">
             <p className="text-2xl text-amber-200 leading-relaxed font-serif italic text-center" 
                style={{ fontFamily: 'Crimson Text, Georgia, serif' }}>
-              Hark, brave traveler! Thou standest at the threshold of a most wondrous adventure through the annals of time.
+              Welcome, traveler. You stand at the threshold of an extraordinary journey through time itself.
             </p>
             
             <div className="h-px w-full bg-gradient-to-r from-transparent via-amber-700 to-transparent"></div>
@@ -59,15 +59,15 @@ const WelcomePage = ({ onContinue }) => {
             <div className="space-y-4 text-amber-100 text-lg leading-relaxed font-serif" 
                  style={{ fontFamily: 'Crimson Text, Georgia, serif' }}>
               <p>
-                Within these chronicles, ye shall walk paths once trodden by emperors and peasants, warriors and healers, revolutionaries and peacemakers. Each tale herein doth present thee with choices most gravous, wherein thy decisions shall shape not merely one life, but the course of history itself.
+                In these chronicles, you will walk in the footsteps of emperors and peasants, warriors and healers, revolutionaries and peacemakers. Each story presents you with choices that matter—decisions that will shape not just one life, but the very course of history.
               </p>
               
               <p>
-                Be not deceived by appearances, for in this realm, there be no simple answers. The line betwixt hero and villain oft proves as thin as morning mist, and the noblest intentions may lead to tragedy most profound. Each choice carrieth weight, each path its consequence.
+                Nothing here is black and white. The line between hero and villain is often razor-thin, and the best intentions can lead to tragedy. Every choice carries weight. Every path has consequences. Your decisions will define who you become.
               </p>
 
               <p>
-                Thou shalt encounter dilemmas of loyalty and betrayal, of courage and survival, of truth and expedience. Wilt thou stand firm in thy principles though the heavens fall? Or wilt thou bend like the willow to preserve what thou holdest dear? Such questions await thy answer.
+                You'll face dilemmas of loyalty and betrayal, courage and survival, truth and compromise. Will you stand firm in your principles no matter the cost? Or will you adapt to preserve what matters most? These questions await your answer.
               </p>
             </div>
 
@@ -78,7 +78,7 @@ const WelcomePage = ({ onContinue }) => {
                 <Map className="w-8 h-8 text-amber-400 mx-auto mb-2" />
                 <h3 className="text-amber-300 font-serif font-bold mb-2">Choose Wisely</h3>
                 <p className="text-amber-200/80 text-sm font-serif">
-                  Every decision matters. Multiple paths and endings await.
+                  Every decision matters. Multiple paths and endings await your discovery.
                 </p>
               </div>
 
@@ -86,7 +86,7 @@ const WelcomePage = ({ onContinue }) => {
                 <BookOpen className="w-8 h-8 text-amber-400 mx-auto mb-2" />
                 <h3 className="text-amber-300 font-serif font-bold mb-2">Experience History</h3>
                 <p className="text-amber-200/80 text-sm font-serif">
-                  Immerse thyself in pivotal moments that shaped our world.
+                  Immerse yourself in pivotal moments that shaped our world.
                 </p>
               </div>
 
@@ -94,7 +94,7 @@ const WelcomePage = ({ onContinue }) => {
                 <Compass className="w-8 h-8 text-amber-400 mx-auto mb-2" />
                 <h3 className="text-amber-300 font-serif font-bold mb-2">Shape Destiny</h3>
                 <p className="text-amber-200/80 text-sm font-serif">
-                  Thy choices shall echo through the ages.
+                  Your choices will echo through the ages.
                 </p>
               </div>
             </div>
@@ -103,7 +103,7 @@ const WelcomePage = ({ onContinue }) => {
 
             <p className="text-xl text-amber-200 leading-relaxed font-serif italic text-center" 
                style={{ fontFamily: 'Crimson Text, Georgia, serif' }}>
-              Steel thy heart and sharpen thy mind, for the past awaits thy footsteps. Let us embark upon this voyage through time's great tapestry!
+              Prepare yourself. The past is waiting, and your story is about to begin.
             </p>
           </div>
 
