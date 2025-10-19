@@ -3,6 +3,7 @@ import { ArrowLeft, BookOpen, Lock } from 'lucide-react';
 import AncientStory from './AncientStory';
 import MedievalStory from './MedievalStory';
 import IndustrialStory from './IndustrialStory';
+import ExplorationStory from './ExplorationStory';
 import ModernStory from './ModernStory';
 
 const StorySelection = ({ timeline, onBack }) => {
@@ -32,15 +33,16 @@ const StorySelection = ({ timeline, onBack }) => {
       }
     ],
     exploration: [
-      {
-        id: 'voyage',
-        title: 'Voyage of the Unknown',
-        description: 'Sail with explorers to new worlds. Face ethical dilemmas about discovery and encounters with Indigenous peoples.',
-        difficulty: 'Medium',
-        themes: ['Ethics', 'Discovery', 'Culture'],
-        available: false
-      }
-    ],
+  {
+    id: 'voyage',
+    title: 'Voyage of the Unknown',
+    description: 'Sail with Hernán Cortés to Mexico in 1519. Face profound ethical dilemmas about conquest, cultural destruction, and your role as a translator. Will you serve Spain loyally, protect indigenous peoples, or find a middle path?',
+    difficulty: 'Very Hard',
+    themes: ['Ethics', 'Humanity', 'Colonialism'],
+    available: true, 
+    component: ExplorationStory 
+  }
+],
     revolution: [
   {
     id: 'factory',
