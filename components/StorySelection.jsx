@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowLeft, BookOpen, Lock } from 'lucide-react';
 import AncientStory from './AncientStory';
 import MedievalStory from './MedievalStory';
+import IndustrialStory from './IndustrialStory';
 import ModernStory from './ModernStory';
 
 const StorySelection = ({ timeline, onBack }) => {
@@ -41,15 +42,16 @@ const StorySelection = ({ timeline, onBack }) => {
       }
     ],
     revolution: [
-      {
-        id: 'factory',
-        title: 'Voices of the Factory',
-        description: 'Work as a laborer in the Industrial Revolution. Navigate dangerous factories, early labor movements, and social inequality.',
-        difficulty: 'Hard',
-        themes: ['Justice', 'Survival', 'Change'],
-        available: false
-      }
-    ],
+  {
+    id: 'factory',
+    title: 'Voices of the Factory',
+    description: 'Work as a laborer in the Industrial Revolution. Navigate dangerous factories, early labor movements, and social inequality.',
+    difficulty: 'Hard',
+    themes: ['Justice', 'Survival', 'Change'],
+    available: true,
+    component: IndustrialStory
+  }
+]
     modern: [
       {
         id: 'chernobyl',
