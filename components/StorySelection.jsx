@@ -54,7 +54,7 @@ const StorySelection = ({ timeline, onBack }) => {
       {
         id: 'chernobyl',
         title: 'Chernobyl Disaster',
-        description: 'Respond to an environmental catastrophe. Face decisions about survival, ethical responsibility, and human cost as a nuclear engineer during history\'s worst nuclear accident.',
+        description: 'Respond to an environmental catastrophe. Face decisions about survival, ethical responsibility, and human cost as a nuclear engineer during the worst nuclear accident in history.',
         difficulty: 'Very Hard',
         themes: ['Responsibility', 'Survival', 'Truth'],
         available: true,
