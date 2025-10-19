@@ -1308,4 +1308,243 @@ const ExplorationStory = ({ onBack }) => {
     leave_entirely: {
       title: "Walking Away",
       date: "November 1519 - Complete Departure",
-      text: "You leave the expedition entirely. No imprisonment, no conflict—you simply walk away. Cortés lets you go, glad to be rid of a problematic translator.\n\nYou settle in a small coastal village, far from conquest's front lineswhich helps Spanish conquest), or correct him (
+      text: "You leave the expedition entirely. No imprisonment, no conflictâ€"you simply walk away. CortÃ©s lets you go, glad to be rid of a problematic translator.\n\nYou settle in a small coastal village, far from conquest's front lines. You teach languages, work as a translator for merchants, and live quietly. You hear news of the conquest but are no longer part of it.\n\nYou've chosen peace and distance over involvement.",
+      isEnding: true,
+      outcome: "You lived to 71 in your coastal village, dying peacefully of old age. You married a local fisherman, had three children, and lived a quiet, unremarkable life. You taught Spanish and indigenous languages to traders, helping facilitate peaceful commerce rather than conquest. Your life was ordinary, comfortable, and untroubledâ€"which is itself an achievement in conquest times. You're not remembered by history. No chronicles mention you. But you lived well, loved deeply, and died peacefully. Sometimes the greatest wisdom is knowing when to walk away. You chose a quiet life over a meaningful death, and you never regretted it. Your descendants still live in that coastal town, unaware of what you walked away from."
+    }
+  };
+
+  const currentSceneData = scenes[currentScene];
+
+  if (!currentSceneData) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-amber-950 via-stone-900 to-black flex items-center justify-center">
+        <div className="text-white text-center p-8">
+          <Skull className="w-16 h-16 text-amber-400 mx-auto mb-4" />
+          <p className="text-xl mb-4">Scene not found: {currentScene}</p>
+          <button 
+            onClick={onBack} 
+            className="px-6 py-3 bg-amber-700 hover:bg-amber-600 rounded-lg transition-all"
+          >
+            Return to Timeline
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-amber-950 via-stone-900 to-black relative overflow-hidden">
+      {/* Decorative exploration elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 left-10 text-9xl">âš"</div>
+        <div className="absolute bottom-10 right-10 text-9xl">🌎</div>
+        <div className="absolute top-1/2 right-1/4 text-6xl">⛵</div>
+      </div>
+
+      {/* Stats Panel */}
+      <div className="fixed top-4 right-4 bg-stone-900/90 backdrop-blur-sm border-2 border-amber-800/60 rounded-lg p-4 z-20 w-64">
+        <h3 className="text-amber-400 font-serif font-bold mb-3 text-center">Your Character</h3>
+        
+        <div className="space-y-3">
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-amber-300 text-sm flex items-center gap-2">
+                <Ship className="w-4 h-4" />
+                Loyalty
+              </span>
+              <span className="text-amber-200 text-sm font-bold">{stats.loyalty}%</span>
+            </div>
+            <div className="w-full bg-stone-800 rounded-full h-2">
+              <div 
+                className="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 rounded-full transition-all duration-500"
+                style={{ width: `${stats.loyalty}%` }}
+              />
+            </div>
+          </div>
+
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-amber-300 text-sm flex items-center gap-2">
+                <Heart className="w-4 h-4" />
+                Humanity
+              </span>
+              <span className="text-amber-200 text-sm font-bold">{stats.humanity}%</span>
+            </div>
+            <div className="w-full bg-stone-800 rounded-full h-2">
+              <div 
+                className="bg-gradient-to-r from-rose-600 to-red-600 h-2 rounded-full transition-all duration-500"
+                style={{ width: `${stats.humanity}%` }}
+              />
+            </div>
+          </div>
+
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-amber-300 text-sm flex items-center gap-2">
+                <Compass className="w-4 h-4" />
+                Survival
+              </span>
+              <span className="text-amber-200 text-sm font-bold">{stats.survival}%</span>
+            </div>
+            <div className="w-full bg-stone-800 rounded-full h-2">
+              <div 
+                className="bg-gradient-to-r from-green-600 to-emerald-600 h-2 rounded-full transition-all duration-500"
+                style={{ width: `${stats.survival}%` }}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-4 pt-3 border-t border-amber-800/40">
+          <p className="text-amber-400/70 text-xs text-center italic">
+            What will history remember?
+          </p>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 container mx-auto px-4 py-8 max-w-4xl">
+        {/* Back Button */}
+        <button
+          onClick={onBack}
+          className="flex items-center gap-2 text-amber-300 hover:text-amber-100 transition-colors mb-6"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          <span>Return to Timeline</span>
+        </button>
+
+        {/* Story Card */}
+        <div className="bg-stone-900/80 backdrop-blur-sm border-2 border-amber-800/60 rounded-lg overflow-hidden shadow-2xl">
+          {/* Header */}
+          <div className="bg-gradient-to-r from-amber-900 to-orange-900 p-6 border-b-2 border-amber-800/60">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-3">
+                <Compass className="w-8 h-8 text-amber-300" />
+                <div>
+                  <h2 className="text-3xl font-serif font-bold text-amber-300">
+                    {currentSceneData.title}
+                  </h2>
+                  <p className="text-amber-400/80 text-sm italic">{currentSceneData.date}</p>
+                </div>
+              </div>
+              {currentSceneData.isEnding && (
+                <div className="flex items-center gap-2 bg-amber-700/30 px-3 py-1 rounded-full">
+                  <Skull className="w-4 h-4 text-amber-300" />
+                  <span className="text-amber-300 text-sm font-bold">Ending</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Story Text */}
+          <div className="p-8">
+            <div className="prose prose-invert max-w-none">
+              {currentSceneData.text.split('\n\n').map((paragraph, index) => (
+                <p key={index} className="text-amber-100 text-lg leading-relaxed mb-4 font-serif">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+
+            {/* Ending Outcome */}
+            {currentSceneData.isEnding && currentSceneData.outcome && (
+              <div className="mt-8 p-6 bg-amber-900/20 border-2 border-amber-700/50 rounded-lg">
+                <div className="flex items-start gap-3">
+                  <AlertTriangle className="w-6 h-6 text-amber-400 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-amber-300 font-serif font-bold text-xl mb-2">Your Legacy</h3>
+                    <p className="text-amber-200 leading-relaxed">
+                      {currentSceneData.outcome}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Choices */}
+            {!currentSceneData.isEnding && currentSceneData.choices && (
+              <div className="mt-8 space-y-4">
+                <div className="flex items-center gap-2 text-amber-400 font-serif font-bold">
+                  <span className="text-lg">Choose your path:</span>
+                </div>
+                {currentSceneData.choices.map((choice, index) => (
+                  <button
+                    key={index}
+                    onClick={() => makeChoice(choice.next, choice.text, choice.stats)}
+                    className="w-full text-left p-5 bg-gradient-to-r from-stone-800/50 to-amber-950/30 hover:from-amber-900/40 hover:to-orange-900/40 border-2 border-amber-800/40 hover:border-amber-600 rounded-lg transition-all duration-300 group"
+                  >
+                    <p className="text-amber-200 group-hover:text-amber-100 font-serif leading-relaxed">
+                      {choice.text}
+                    </p>
+                    {choice.stats && Object.keys(choice.stats).length > 0 && (
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {Object.entries(choice.stats).map(([stat, value]) => (
+                          value !== 0 && (
+                            <span 
+                              key={stat}
+                              className={`text-xs px-2 py-1 rounded-full ${
+                                value > 0 
+                                  ? 'bg-green-900/40 text-green-300' 
+                                  : 'bg-red-900/40 text-red-300'
+                              }`}
+                            >
+                              {stat.charAt(0).toUpperCase() + stat.slice(1)}: {value > 0 ? '+' : ''}{value}
+                            </span>
+                          )
+                        ))}
+                      </div>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {/* Ending Actions */}
+            {currentSceneData.isEnding && (
+              <div className="mt-8 flex gap-4">
+                <button
+                  onClick={() => {
+                    setCurrentScene('intro');
+                    setChoices([]);
+                    setStats({ loyalty: 50, humanity: 50, survival: 50 });
+                  }}
+                  className="flex-1 px-6 py-3 bg-amber-700 hover:bg-amber-600 text-white font-serif font-semibold rounded-lg transition-all duration-300"
+                >
+                  Play Again
+                </button>
+                <button
+                  onClick={onBack}
+                  className="flex-1 px-6 py-3 bg-stone-700 hover:bg-stone-600 text-white font-serif font-semibold rounded-lg transition-all duration-300"
+                >
+                  Choose Different Timeline
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Choice History */}
+        {choices.length > 0 && !currentSceneData.isEnding && (
+          <div className="mt-6 bg-stone-900/60 backdrop-blur-sm border border-amber-800/40 rounded-lg p-4">
+            <h3 className="text-amber-400 font-serif font-bold mb-3 text-sm">Your Journey So Far:</h3>
+            <div className="space-y-2">
+              {choices.map((choice, index) => (
+                <div key={index} className="flex items-start gap-2">
+                  <span className="text-amber-600 text-xs mt-1">â–¸</span>
+                  <p className="text-amber-300/70 text-xs">{choice}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      <style jsx>{`
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+      `}</style>
+    </div>
+  );
+};
+
+export default ExplorationStory;
