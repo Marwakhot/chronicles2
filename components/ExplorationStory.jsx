@@ -1,494 +1,4 @@
-claim_fiction: {
-      title: "The Novelist's Defense",
-      date: "December 1519 - Strategic Lie",
-      text: "You claim your journal is fiction, stories you're writing for entertainment. Cortés is skeptical but accepts this explanation.\n\n'Writers and their fantasies,' he mutters, returning the journal. 'Just keep them to yourself.'\n\nYou continue recording under the guise of fiction. When you describe massacres, you call them 'dramatic scenes.' When you document broken treaties, they're 'plot twists.' The chronicle survives as fiction.\n\nBut the lie gnaws at you. Is fiction that tells truth more valuable than destroyed fact? Or have you diminished the real suffering by calling it story?",
-      isEnding: true,
-      outcome: "Your 'fictional' chronicle survived and was published in 1535 as 'Tales from the New World.' For decades, it was read as adventure fiction. Only in the 1650s did scholars realize it was thinly veiled fact. Your 'novel' became crucial historical evidence. You lived to 69, never admitting in life that your fiction was truth. After your death, your personal papers revealed the truth. Historians debate whether your strategic fiction preserved important truth or diluted historical urgency by framing atrocities as entertainment. You found a third way—not pure truth, not total silence, but truth disguised as fiction. It was clever, morally ambiguous, and ultimately preserved knowledge that might otherwise have been lost. You proved that sometimes the best way to tell dangerous truths is to pretend they're lies."
-    },
-
-    stop_warnings: {
-      title: "Retreat to Safety",
-      date: "September-November 1519 - Silence",
-      text: "You stop warning indigenous peoples. The change in your behavior is noted. Suspicion against you decreases. You survive.\n\nBut you watch communities walk into Spanish traps you could have prevented. You translate false promises knowing they're false. You see the results of your silence.\n\nThe moral weight is crushing. You've chosen survival, but at what cost to your soul?",
-      isEnding: true,
-      outcome: "You survived the conquest and lived to 61. You became a wealthy translator, respected by Spanish authorities. You married a Spanish officer and had three children. But guilt consumed you. You drank heavily, suffered nightmares, and in your final years developed a reputation for unstable behavior. On your deathbed, you confessed to a priest: 'I could have warned them. I could have saved so many. I chose my life over theirs.' The priest absolved you, but you never absolved yourself. Your children inherited your wealth but also your trauma—your eldest son became a monk dedicated to indigenous peoples, trying to atone for your choices. You proved that survival without integrity is its own form of death."
-    },
-
-    continue_warnings: {
-      title: "The Persistent Voice",
-      date: "September-December 1519 - Continuing Despite Danger",
-      text: "You continue warning indigenous peoples despite the mounting danger. Your warnings save several communities from surprise attacks. They also make Spanish conquest harder, bloodier.\n\nPedro de Alvarado finally catches you passing information to a Tlaxcalan messenger. You're arrested immediately.\n\nAt your trial, Cortés himself presides. 'María Catalina de Santos, you are charged with treason against Spain and against God. How do you plead?'\n\n'Guilty of trying to prevent genocide,' you respond. 'Not guilty of treason to humanity.'",
-      choices: [
-        {
-          text: "Accept execution with dignity",
-          next: "execution_dignity",
-          stats: { humanity: 30, survival: -100 }
-        },
-        {
-          text: "Beg for mercy and offer to serve loyally",
-          next: "beg_mercy",
-          stats: { survival: 15, humanity: -20 }
-        }
-      ]
-    },
-
-    execution_dignity: {
-      title: "Facing Death Proudly",
-      date: "December 1519 - The Execution",
-      text: "You face execution with head held high. When offered a chance to recant and beg mercy, you refuse.\n\n'I warned people who deserved warning. I resisted invasion that deserved resistance. I'm guilty of everything you accuse me of and proud of it. Do what you must.'\n\nYour execution is public, meant as a warning. Instead, it inspires some Spanish to question their mission and emboldens indigenous resistance.",
-      isEnding: true,
-      outcome: "You died at 25, executed as a traitor. Your defiant death became legend in both Spanish and indigenous accounts. Spanish authorities tried to suppress your story, calling you a madwoman, but too many had witnessed your courage. Indigenous oral traditions preserved your name and story. In the 19th century, Mexican nationalists adopted you as a symbol of resistance to imperialism. Today, you're commemorated with monuments, street names, and annual remembrances. Your execution date is observed by some as 'Day of Conscience.' You died very young, but your death meant something. You refused to beg, refused to compromise, and refused to pretend conquest was anything other than what it was. That moral clarity, even unto death, inspired generations. You proved that sometimes how you die matters as much as how you live."
-    },
-
-    beg_mercy: {
-      title: "The Plea for Life",
-      date: "December 1519 - Begging Forgiveness",
-      text: "You beg for mercy, promising to serve loyally and faithfully if spared. Cortés, seeing your genuine terror, grants clemency.\n\n'You'll live. But you'll translate in chains until you've proven yourself trustworthy again. Perhaps never.'\n\nYou've bought life at the cost of dignity and any remaining influence.",
-      isEnding: true,
-      outcome: "You lived in chains for three years, translating under guard. Eventually released in 1523, you continued as a minor translator until your death at 48. You lived in shame, knowing you'd begged when you should have stood firm. You drank heavily and suffered depression. On your deathbed, you told a priest: 'I chose life but lost the reason to live.' Your story became a cautionary tale about the cost of cowardice. Some pitied you, others scorned you, but no one respected you. You died unmourned except by family. Your gravestone bears only your name and dates—no epitaph, because no one could think of anything positive to say. You proved that survival at any cost can cost everything that makes survival worthwhile."
-    },
-
-    guarded_translator: {
-      title: "Under Guard",
-      date: "September 1519 - August 1521 - Guarded Service",
-      text: "You translate under guard for two years, until Tenochtitlan falls. You're watched constantly, your every word monitored. You have no freedom to help anyone.\n\nYou're a living tool, nothing more. The psychological toll is immense. You translate words that lead to deaths, policies that enslave peoples, orders that destroy cultures—all while unable to resist.\n\nWhen the conquest ends, you're released. You're free but broken.",
-      isEnding: true,
-      outcome: "You lived to 48, dying young from what would now be called post-traumatic stress disorder. You drank heavily, suffered nightmares, and isolated yourself from others. Your final years were spent in solitude in a small house in Veracruz. You left no children, no legacy, no chronicle. The only record of your existence is your name on a payroll document: 'María de Santos, translator, 6 pesos monthly.' You survived physically but died spiritually during those years in chains. Your story is a warning about the cost of survival when survival requires complete abandonment of principles. Sometimes living is harder than dying."
-    },
-
-    execution_principle: {
-      title: "Dying Free",
-      date: "September 1519 - The Execution",
-      text: "You refuse Cortés's offer. 'I will not help you destroy these peoples. Kill me.'\n\nCortés seems almost respectful. 'You're a fool, María. A courageous fool, but a fool nonetheless.'\n\n'Better a fool with a conscience than a success without one.'\n\nYou're executed the next morning. Your last words are in Nahuatl: 'Resist them. Unite. Don't trust Spanish promises.'",
-      isEnding: true,
-      outcome: "You died at 25, executed as a traitor. But your last words were recorded by an Aztec witness and preserved in indigenous oral traditions. They became a rallying cry for resistance movements. Spanish authorities tried to suppress your story, but it survived. After Mexican independence, you were rehabilitated as a national hero—a Spanish person who chose indigenous peoples over imperial conquest. Streets, schools, and squares bear your name. Your execution site is marked with a monument. You chose death over complicity and your death inspired generations. You lived briefly but died magnificently, standing for principles bigger than yourself. That's a life of profound meaning compressed into few years."
-    },
-
-    imprisoned_righteous: {
-      title: "Righteous Prisoner",
-      date: "November 1519 - June 1520 - Imprisonment",
-      text: "You accept imprisonment with dignity. You warned Moctezuma because it was right, and you'd do it again. From your cell, you watch Tenochtitlan descend into tension and violence.\n\nWhen the Aztec uprising occurs, Spanish blame you for their vulnerability. 'Your warning caused this!' they shout.\n\nPerhaps. Or perhaps your warning just leveled the playing field slightly. Either way, you don't regret it.",
-      isEnding: true,
-      outcome: "You were executed in June 1520 during the chaos of Spanish evacuation from Tenochtitlan. You were 26. Your warning to Moctezuma became legendary—Spanish chronicles vilified you as a traitor, but indigenous accounts honored you as one of the few Spanish who told them the truth. Your execution site in Tenochtitlan became a memorial after Mexican independence. You're now considered a proto-human rights activist, someone who believed all peoples deserved truth regardless of political allegiances. Your story is taught in Mexican schools as an example of moral courage. You chose truth over tribal loyalty and paid the ultimate price, but your example resonates across centuries. You died young but died standing for universal human dignity. That matters."
-    },
-
-    moctezuma_protection: {
-      title: "Under Imperial Protection",
-      date: "November 1519 - June 1520 - Aztec Court",
-      text: "You escape to Moctezuma's protection. The Aztec emperor is intrigued by you—a Spanish person who chose his side. You become a member of his court, advising on Spanish tactics and culture.\n\nYou live in unprecedented luxury while watching two empires clash. You're training Aztec warriors in Spanish warfare when the uprising begins.\n\nDuring the fighting, you must choose: actively fight Spanish, or just provide information and remain non-combatant?",
-      choices: [
-        {
-          text: "Take up arms and fight Spanish forces",
-          next: "fight_spanish",
-          stats: { humanity: 20, loyalty: -40, survival: -20 }
-        },
-        {
-          text: "Remain advisor only—no direct combat",
-          next: "advisor_only",
-          stats: { humanity: 15, loyalty: -25, survival: 10 }
-        }
-      ]
-    },
-
-    fight_spanish: {
-      title: "Taking Up Arms",
-      date: "June-July 1520 - In Combat",
-      text: "You take up an obsidian-bladed weapon and fight alongside Aztec warriors during the uprising. You're not skilled at combat, but you fight with fury born of guilt and determination.\n\nYou kill two Spanish soldiers—men you don't recognize. The act haunts you immediately. These are your countrymen, even if you oppose their cause.\n\nDuring Spanish evacuation, you're wounded but survive. Aztec healers treat you. You've fully committed to armed resistance.",
-      isEnding: true,
-      outcome: "You died in August 1521 during the final Spanish assault on Tenochtitlan. You were 27, killed by Spanish artillery. Your body was never identified by Spanish forces. Aztec chronicles record you as 'the Spanish woman who fought for us,' though they didn't record your name. Centuries later, historians pieced together your identity from Spanish records noting your disappearance and Aztec accounts of a Spanish woman warrior. You chose violence to resist violence. Historical debate continues about whether your choice was justified or whether you just added to the bloodshed. You proved that even conquistadors could question their side enough to switch allegiances completely. That's rare in any era. You died young, fighting for a cause that ultimately lost, but you died on your feet, weapon in hand, standing for what you believed. That counts for something."
-    },
-
-    advisor_only: {
-      title: "The Strategic Mind",
-      date: "June 1520 - August 1521 - Aztec Advisor",
-      text: "You remain a strategic advisor, providing intelligence but not personally engaging in combat. You help plan defenses, train warriors, and coordinate resistance—but you don't personally kill Spanish.\n\nThis distinction matters to you, though you recognize its moral ambiguity. You're still fighting Spanish; you're just not pulling the trigger yourself.\n\nWhen Tenochtitlan falls, you're captured along with other advisors to Aztec leadership.",
-      isEnding: true,
-      outcome: "You were tried for treason and executed in September 1521 at age 27. Your defense at trial became famous: 'I advised people defending their homes. If that's treason against Spain, then Spain itself is the traitor to justice.' Cortés had your statement stricken from official records, but scribes copied it anyway. Your trial testimony survived and influenced later debates about just war and resistance to tyranny. You were posthumously pardoned by the Mexican government in 1921, 400 years after your execution. Your distinction between advising resistance and engaging in combat was philosophically interesting but legally meaningless to Spanish courts. You died for your choices, but your ideas about justified resistance to unjust invasion influenced political philosophy for centuries. Your words outlived your body by generations."
-    },
-
-    appeal_conscience: {
-      title: "The Appeal",
-      date: "September 1519 - Speaking Truth",
-      text: "You continue your defense: 'I appeal to your consciences. Each of you came here for gold, glory, or God. But what have we actually done? We've destroyed peoples who welcomed us. We've stolen from those who shared with us. We've killed those who offered peace.\n\nIs this what you dreamed of when you signed on? Is this the legacy you want?'\n\nSilence fills the room. Some soldiers look uncomfortable. Others angry. Cortés himself seems thoughtful.",
-      choices: [
-        {
-          text: "Wait for Cortés's judgment",
-          next: "cortes_judgment",
-          stats: { humanity: 20 }
-        },
-        {
-          text: "Offer to leave expedition peacefully",
-          next: "offer_peaceful_departure",
-          stats: { humanity: 15, survival: 10 }
-        }
-      ]
-    },
-
-    accept_judgment: {
-      title: "Accepting Fate",
-      date: "September 1519 - The Verdict",
-      text: "You accept whatever judgment comes. Cortés deliberates with his officers. Some argue for execution, others for mercy. The debate lasts hours.\n\nFinally, Cortés announces: 'You will be imprisoned until the conquest is complete. Your fate will be decided then. You're too valuable to execute now, too dangerous to free.'\n\nYou're imprisoned for the duration of the conquest, watching history unfold from a cell.",
-      isEnding: true,
-      outcome: "You spent eighteen months imprisoned, released only after Tenochtitlan fell. By then, the conquest was essentially complete. Cortés granted you freedom but prohibited you from leaving New Spain. You lived in Mexico City, working as a language teacher and translator for ecclesiastical courts. You died at 52 of natural causes. Your trial testimony survived and was published in 1548, ten years after your death. It became important evidence in debates about conquest morality. You accepted judgment and survived, but you also preserved your testimony for history. That testimony influenced legal and ethical debates for centuries. You chose acceptance over resistance and your acceptance became its own form of resistance—calm testimony about injustice that couldn't be dismissed as hysteria."
-    },
-
-    cortes_judgment: {
-      title: "Cortés's Decision",
-      date: "September 1519 - The Verdict",
-      text: "Cortés deliberates with his officers. The room is tense. Finally, he speaks:\n\n'María de Santos, you've spoken boldly. Some call it treason; others might call it conscience. I'll call it impractical idealism. But you've also been valuable.\n\nYou'll remain with the expedition, but you'll translate only verified texts, under supervision. Your influence is ended, but your skills are still needed. This is mercy. Accept it.'\n\nYou've been neutered but spared.",
-      isEnding: true,
-      outcome: "You served in this diminished capacity through the conquest and into colonial administration. You lived to 56, never regaining full trust or influence. You translated legal documents, taught languages, and helped individuals where possible, but you never again shaped major events. Your trial speech survived and was published in 1537, ten years after your death. It influenced reform movements and debates about conquest morality. You lived a quiet life of reduced impact after your moment of bold truth-telling. But that moment mattered. Your speech was quoted by Las Casas, cited in the Valladolid debate, and referenced in early human rights discussions. You proved that one moment of courage can echo through history even if the rest of your life is ordinary. Your legacy is your words more than your deeds."
-    },
-
-    offer_peaceful_departure: {
-      title: "Offering to Leave",
-      date: "September 1519 - The Proposal",
-      text: "You offer to leave peacefully. 'Let me return to Spain or settle in a coastal town. I'll neither help nor hinder the conquest. Just let me go in peace.'\n\nCortés considers this. It would solve his problem without making a martyr of you. After consultation with officers, he agrees.\n\n'You may leave. But if you ever interfere with Spanish interests in the New World, the penalty is death.'\n\nYou're escorted to Veracruz and put on the next ship to Spain.",
-      isEnding: true,
-      outcome: "You returned to Seville in 1520 and lived quietly for forty-seven years, dying at 85—extraordinarily old for the era. You married, had six children, and worked as a language teacher. You wrote a memoir in your seventies that was published after your death. It provided valuable historical perspective from someone who'd witnessed conquest's beginning but chose to walk away. Your memoir influenced the debates about colonialism but from the distance of decades and an ocean. You chose peace over conflict, distance over involvement. You died old and comfortable, having avoided the violence that consumed so many. But you also avoided the meaning that comes from sustained engagement with difficult issues. Your legacy is one of principled withdrawal—admirable to some, cowardly to others. You proved that walking away is an option, but whether it's the right option remains debated."
-    },
-
-    imprisoned_peace: {
-      title: "Imprisoned for Peace",
-      date: "January-June 1520 - Prison",
-      text: "You accept imprisonment as the price of your deceptions. 'I lied to prevent violence. I'd do it again.'\n\nYour imprisonment becomes a cause célèbre among some Spanish soldiers who question conquest. Father Olmedo visits regularly, bringing food and spiritual comfort.\n\nWhen the Aztec uprising occurs, Spanish need translators desperately. They reluctantly release you, but you're no longer trusted with sensitive work.",
-      isEnding: true,
-      outcome: "You continued as a minor translator through the conquest and into the colonial period. You lived to 59, never regaining the trust you lost but never regretting your deceptions. You helped individuals where you could, translated legal documents fairly, and taught languages to both Spanish and indigenous students. At your funeral, students from both communities attended. One Nahuatl-speaking student said: 'She taught us that language can be a weapon for peace or war. She chose peace.' Your gravestone reads: 'She bent the truth to serve a higher truth.' That's an epitaph worth having. You chose strategic deception over strategic truth and your conscience was clear."
-    },
-
-    promise_faithful: {
-      title: "The Broken Spirit",
-      date: "January-August 1521 - Faithful Service",
-      text: "You promise faithful translation and keep your promise. You translate exactly what's said, no more softening, no more mercy.\n\nIndigenous leaders hear the full brutality of Spanish demands. Many resist and are crushed. You translate orders for massacres, for enslavements, for cultural destruction.\n\nYou've become exactly what Cortés always wanted: a perfect tool. But you're dead inside.",
-      isEnding: true,
-      outcome: "You lived to 43, dying of alcoholism and despair. Your final years were spent in a haze, trying to forget what you'd helped enable. You translated faithfully for twenty-four years, enabling conquest and colonization with your linguistic skills. You were well-paid and respected by Spanish authorities. But you were a ghost—technically alive, but your soul died the day you promised faithful service knowing what faithful service meant. On your deathbed, you refused last rites, saying 'I don't deserve God's mercy.' Your grave is unmarked. Even your name was misspelled on the death registry. You chose survival through submission and found that some prices are too high even for survival."
-    },
-
-    return_spain_dissident: {
-      title: "The Returned Dissident",
-      date: "1520-1542 - Back in Spain",
-      text: "You return to Spain with the dissident soldiers. In Seville, you write and speak about conquest's immorality. You ally with reform movements, support Bartolomé de las Casas, and advocate for New Laws protecting indigenous peoples.\n\nYour testimony as someone who was there carries weight. You influence the debates about colonial policy.",
-      isEnding: true,
-      outcome: "You spent twenty-two years in Spain as a prominent advocate for indigenous rights. Your testimony contributed to the New Laws of 1542, which provided legal protections for indigenous peoples in Spanish colonies. You never returned to the New World but your words shaped its governance. You died at 60, respected by reformers and hated by conquistador families who saw you as a traitor. Your writings influenced the Valladolid debate and early human rights discourse. You proved that witnessing atrocity and then speaking truth about it can shape policy for the better. Your advocacy didn't stop colonialism, but it made it less brutal than it might have been. That's significant. You chose your battles wisely and fought them effectively from a platform where your voice could be heard."
-    },
-
-    stay_advocate: {
-      title: "The Indigenous Advocate",
-      date: "1520-1556 - Lifetime of Advocacy",
-      text: "You remain in New Spain, advocating for indigenous rights within the colonial system. You translate legal codes, help indigenous communities navigate Spanish law, and push for reforms.\n\nYou never have formal power, but you have influence. You help establish legal precedents protecting some indigenous rights, preserve cultural practices through documentation, and mediate disputes.",
-      isEnding: true,
-      outcome: "You lived to 74, one of the longest-lived figures from the conquest era. You became 'La Defensora'—the defender—known throughout New Spain as an advocate for indigenous peoples. You helped hundreds of communities negotiate better terms with Spanish authorities, preserved countless indigenous customs through careful documentation, and trained a generation of indigenous legal advocates. At your funeral, both the Archbishop and indigenous community leaders eulogized you. You were buried in Mexico City, and your grave became a pilgrimage site for indigenous peoples seeking justice. You proved that one person working within a flawed system can still make a real difference over a sustained lifetime of effort. You didn't destroy the colonial system, but you made it survivable for many who otherwise wouldn't have made it. That's a legacy of genuine compassion and effectiveness."
-    },
-
-    continue_sabotage: {
-      title: "The Persistent Saboteur",
-      date: "April-July 1520 - Sabotage Escalates",
-      text: "You escalate your sabotage: poisoning supplies, releasing prisoners, misdirecting troops, destroying gunpowder stores. Each act is risky. Each risks discovery.\n\nPedro de Alvarado finally catches you red-handed, setting fire to a supply depot. There's no talking your way out this time. You're arrested for treason and sabotage.\n\nCortés is furious. 'You've cost us hundreds of men with your sabotage. You'll be executed as an example.'",
-      choices: [
-        {
-          text: "Face execution with pride in your resistance",
-          next: "proud_execution",
-          stats: { humanity: 30, survival: -100 }
-        },
-        {
-          text: "Try one last escape attempt",
-          next: "final_escape_attempt",
-          stats: { humanity: 20, survival: -50 }
-        }
-      ]
-    },
-
-    escape_before_caught: {
-      title: "The Timely Escape",
-      date: "July 1520 - Fleeing Before Capture",
-      text: "You sense Alvarado is closing in. Before he can act, you flee Tenochtitlan during the chaos of the 'Noche Triste,' when Spanish are expelled from the city.\n\nYou disappear into the confusion, eventually finding shelter with Tlaxcalan communities who remember your earlier help. You live among them as Spanish regroup for their final assault.",
-      isEnding: true,
-      outcome: "You lived among the Tlaxcalans for thirty-three years, dying at 61. You married a Tlaxcalan noble, had four children, and became a respected elder. Your sabotage activities were never fully discovered by Spanish authorities. You lived a quiet life, teaching languages and helping your adopted community navigate colonial rule. Your children became important cultural bridges. On your deathbed, you told your eldest daughter about your sabotage work. She preserved your story, which was eventually written down in the 1580s. Your memoir, discovered in the 20th century, revealed you'd conducted one of the most effective resistance campaigns of the conquest era. You delayed Spanish advances, saved hundreds of lives, and escaped justice to live peacefully. You proved that sometimes the best revenge is living well after effective resistance."
-    },
-
-    proud_execution: {
-      title: "Defiant Until the End",
-      date: "July 1520 - The Final Stand",
-      text: "You face execution proudly. 'I sabotaged an unjust invasion. I'm a hero, not a traitor. History will vindicate me even if you execute me.'\n\nCortés shakes his head. 'History is written by victors. No one will remember you, María.'\n\n'You're wrong. Truth outlives power. Someone will remember. Someone will tell my story.'\n\nYou're executed the next morning, defiant to the end.",
-      isEnding: true,
-      outcome: "Cortés was wrong. Your story survived in multiple accounts—Spanish records of your treason, indigenous oral traditions of your resistance, and most importantly, a journal you'd hidden that was discovered in 1680. Your sabotage campaign, documented in your journal, was revealed to have been far more extensive than Spanish authorities ever knew. You'd delayed conquest by months, saved hundreds of lives, and inspired other resisters. Modern historians call you one of the most effective resistance fighters of the conquest era. Monuments to you exist in Mexico, and your story is taught in schools as an example of resistance to tyranny. You died at 26, but your defiant last words—'Truth outlives power'—proved prophetic. You're remembered not despite your execution, but because of how you faced it."
-    },
-
-    final_escape_attempt: {
-      title: "The Last Gambit",
-      date: "July 1520 - Desperate Flight",
-      text: "You attempt one final escape during the confusion of your impending execution. You're wounded in the attempt but manage to flee the Spanish camp.\n\nYou survive three days in the jungle before dying of your wounds and infection. Tlaxcalan villagers find your body and give you a proper burial.",
-      isEnding: true,
-      outcome: "Your body was buried by Tlaxcalans who recognized you as someone who'd tried to help indigenous peoples. They buried you with honor, marking your grave with both Christian cross and indigenous symbols. Your final escape attempt became legendary—'the woman who chose freedom in death over captivity in life.' Your grave became a pilgrimage site for people resisting oppression. Songs were written about your final days in the jungle, wounded and alone but free. You died at 26, but you died as you'd lived your final months—resisting conquest with everything you had. Your choice to die free rather than live in chains inspired others facing similar choices. You proved that the manner of death can be its own statement of values. Your last act of defiance became your most remembered."
-    },
-
-    record_again: {
-      title: "Defiant Documentation",
-      date: "January-August 1520 - Recording Resumes",
-      text: "You begin chronicling again, more carefully hidden this time. You write in smaller script, use better codes, hide pages in multiple locations.\n\nYour new chronicle is even more detailed than the first. You're documenting not just events but your emotional journey, the moral compromises, the human cost of conquest on all sides.\n\nThis time, you successfully protect your work. It survives.",
-      isEnding: true,
-      outcome: "Your second chronicle survived and was even more powerful than the first. Combined with your burned first journal (of which you'd kept fragmentary copies), your documentation became the most comprehensive account of conquest from a morally conflicted participant. Published in 1547, five years after your death at 65, it influenced generations of historians and ethicists. Your chronicle is taught in universities worldwide as a primary source on conquest and a meditation on complicity, resistance, and moral choice in impossible circumstances. You proved that persistence matters—even when your first attempt is destroyed, you can start again. Your refusal to be silenced became as important as what you documented. You died knowing your truth would outlive attempts to suppress it."
-    },
-
-    direct_help: {
-      title: "From Words to Actions",
-      date: "January-July 1521 - Direct Service",
-      text: "You stop chronicling and focus on direct help: treating wounded, sheltering refugees, teaching survival skills, mediating disputes. You can't change conquest, but you can ease individual suffering.\n\nYou establish a small hospital in Texcoco. You treat Aztec, Spanish, and Tlaxcalan wounded impartially. Some call you a saint. Others call you a traitor. You don't care—you're just reducing suffering where you can.",
-      isEnding: true,
-      outcome: "Your hospital in Texcoco operated for twenty-eight years, treating thousands. You died at 56 of disease caught from a patient. Your hospital continued operating for another century, eventually becoming the Hospital Real de Indios. You never documented your work, so you're barely mentioned in historical records. But oral traditions in Texcoco remember 'María the Healer' who treated everyone equally. Your great-granddaughter, researching family history in 1603, compiled testimonies about you and sent them to Spain. They survive in a monastery archive. You chose action over documentation, immediate help over historical record. Most historians don't know your name, but thousands of people lived because of you. That's a trade many would accept."
-    },
-
-    quiet_individual_help: {
-      title: "Small Acts of Kindness",
-      date: "October 1519 - July 1528 - Quiet Service",
-      text: "From the margins, you help individuals where you can: warning people of danger, providing food to refugees, treating the wounded, teaching survival skills.\n\nYou're never important enough to make big changes, but you help dozens, then hundreds of individuals. Each person you help is a victory against conquest's dehumanization.",
-      isEnding: true,
-      outcome: "You lived to 66, dying peacefully surrounded by people you'd helped over the years. Your funeral was attended by Spanish and indigenous people alike—individuals you'd assisted, refugees you'd fed, wounded you'd treated. No monuments were built to you, no streets named after you, but hundreds of people lived better lives because you'd been in the world. Your great-granddaughter compiled oral histories about you in 1590. The stories describe a woman who 'helped everyone quietly, asked for nothing, and left the world gentler than she found it.' That's a legacy better than gold or glory. You chose individual kindness over grand gestures and proved that sustained compassion matters more than dramatic heroism."
-    },
-
-    leave_entirely: {
-      title: "Walking Away",
-      date: "November 1519 - Complete Departure",
-      text: "You leave the expedition entirely. No imprisonment, no conflict—you simply walk away. Cortés lets you go, glad to be rid of a problematic translator.\n\nYou settle in a small coastal village, far from conquest's front lines. You teach languages, work as a translator for merchants, and live quietly. You hear news of the conquest but are no longer part of it.\n\nYou've chosen peace and distance over involvement.",
-      isEnding: true,
-      outcome: "You lived to 71 in your coastal village, dying peacefully of old age. You married a local fisherman, had three children, and lived a quiet, unremarkable life. You taught Spanish and indigenous languages to traders, helping facilitate peaceful commerce rather than conquest. Your life was ordinary, comfortable, and untroubled—which is itself an achievement in conquest times. You're not remembered by history. No chronicles mention you. But you lived well, loved deeply, and died peacefully. Sometimes the greatest wisdom is knowing when to walk away. You chose a quiet life over a meaningful death, and you never regretted it. Your descendants still live in that coastal town, unaware of what you walked away from."
-    }
-  };
-
-  const currentSceneData = scenes[currentScene];
-
-  if (!currentSceneData) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-amber-950 via-stone-900 to-black flex items-center justify-center">
-        <div className="text-white text-center p-8">
-          <Skull className="w-16 h-16 text-amber-400 mx-auto mb-4" />
-          <p className="text-xl mb-4">Scene not found: {currentScene}</p>
-          <button 
-            onClick={onBack} 
-            className="px-6 py-3 bg-amber-700 hover:bg-amber-600 rounded-lg transition-all"
-          >
-            Return to Timeline
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-950 via-stone-900 to-black relative overflow-hidden">
-      {/* Decorative exploration elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 text-9xl">⚔️</div>
-        <div className="absolute bottom-10 right-10 text-9xl">🌎</div>
-        <div className="absolute top-1/2 right-1/4 text-6xl">⛵</div>
-      </div>
-
-      {/* Stats Panel */}
-      <div className="fixed top-4 right-4 bg-stone-900/90 backdrop-blur-sm border-2 border-amber-800/60 rounded-lg p-4 z-20 w-64">
-        <h3 className="text-amber-400 font-serif font-bold mb-3 text-center">Your Character</h3>
-        
-        <div className="space-y-3">
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-amber-300 text-sm flex items-center gap-2">
-                <Ship className="w-4 h-4" />
-                Loyalty
-              </span>
-              <span className="text-amber-200 text-sm font-bold">{stats.loyalty}%</span>
-            </div>
-            <div className="w-full bg-stone-800 rounded-full h-2">
-              <div 
-                className="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 rounded-full transition-all duration-500"
-                style={{ width: `${stats.loyalty}%` }}
-              />
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-amber-300 text-sm flex items-center gap-2">
-                <Heart className="w-4 h-4" />
-                Humanity
-              </span>
-              <span className="text-amber-200 text-sm font-bold">{stats.humanity}%</span>
-            </div>
-            <div className="w-full bg-stone-800 rounded-full h-2">
-              <div 
-                className="bg-gradient-to-r from-rose-600 to-red-600 h-2 rounded-full transition-all duration-500"
-                style={{ width: `${stats.humanity}%` }}
-              />
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-amber-300 text-sm flex items-center gap-2">
-                <Compass className="w-4 h-4" />
-                Survival
-              </span>
-              <span className="text-amber-200 text-sm font-bold">{stats.survival}%</span>
-            </div>
-            <div className="w-full bg-stone-800 rounded-full h-2">
-              <div 
-                className="bg-gradient-to-r from-green-600 to-emerald-600 h-2 rounded-full transition-all duration-500"
-                style={{ width: `${stats.survival}%` }}
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-4 pt-3 border-t border-amber-800/40">
-          <p className="text-amber-400/70 text-xs text-center italic">
-            What will history remember?
-          </p>
-        </div>
-      </div>
-
-      {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4 py-8 max-w-4xl">
-        {/* Back Button */}
-        <button
-          onClick={onBack}
-          className="flex items-center gap-2 text-amber-300 hover:text-amber-100 transition-colors mb-6"
-        >
-          <ArrowLeft className="w-5 h-5" />
-          <span>Return to Timeline</span>
-        </button>
-
-        {/* Story Card */}
-        <div className="bg-stone-900/80 backdrop-blur-sm border-2 border-amber-800/60 rounded-lg overflow-hidden shadow-2xl">
-          {/* Header */}
-          <div className="bg-gradient-to-r from-amber-900 to-orange-900 p-6 border-b-2 border-amber-800/60">
-            <div className="flex items-center justify-between mb-2">
-              <div className="flex items-center gap-3">
-                <Compass className="w-8 h-8 text-amber-300" />
-                <div>
-                  <h2 className="text-3xl font-serif font-bold text-amber-300">
-                    {currentSceneData.title}
-                  </h2>
-                  <p className="text-amber-400/80 text-sm italic">{currentSceneData.date}</p>
-                </div>
-              </div>
-              {currentSceneData.isEnding && (
-                <div className="flex items-center gap-2 bg-amber-700/30 px-3 py-1 rounded-full">
-                  <Skull className="w-4 h-4 text-amber-300" />
-                  <span className="text-amber-300 text-sm font-bold">Ending</span>
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* Story Text */}
-          <div className="p-8">
-            <div className="prose prose-invert max-w-none">
-              {currentSceneData.text.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-amber-100 text-lg leading-relaxed mb-4 font-serif">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-
-            {/* Ending Outcome */}
-            {currentSceneData.isEnding && currentSceneData.outcome && (
-              <div className="mt-8 p-6 bg-amber-900/20 border-2 border-amber-700/50 rounded-lg">
-                <div className="flex items-start gap-3">
-                  <AlertTriangle className="w-6 h-6 text-amber-400 flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-amber-300 font-serif font-bold text-xl mb-2">Your Legacy</h3>
-                    <p className="text-amber-200 leading-relaxed">
-                      {currentSceneData.outcome}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Choices */}
-            {!currentSceneData.isEnding && currentSceneData.choices && (
-              <div className="mt-8 space-y-4">
-                <div className="flex items-center gap-2 text-amber-400 font-serif font-bold">
-                  <span className="text-lg">Choose your path:</span>
-                </div>
-                {currentSceneData.choices.map((choice, index) => (
-                  <button
-                    key={index}
-                    onClick={() => makeChoice(choice.next, choice.text, choice.stats)}
-                    className="w-full text-left p-5 bg-gradient-to-r from-stone-800/50 to-amber-950/30 hover:from-amber-900/40 hover:to-orange-900/40 border-2 border-amber-800/40 hover:border-amber-600 rounded-lg transition-all duration-300 group"
-                  >
-                    <p className="text-amber-200 group-hover:text-amber-100 font-serif leading-relaxed">
-                      {choice.text}
-                    </p>
-                    {choice.stats && Object.keys(choice.stats).length > 0 && (
-                      <div className="mt-2 flex flex-wrap gap-2">
-                        {Object.entries(choice.stats).map(([stat, value]) => (
-                          value !== 0 && (
-                            <span 
-                              key={stat}
-                              className={`text-xs px-2 py-1 rounded-full ${
-                                value > 0 
-                                  ? 'bg-green-900/40 text-green-300' 
-                                  : 'bg-red-900/40 text-red-300'
-                              }`}
-                            >
-                              {stat.charAt(0).toUpperCase() + stat.slice(1)}: {value > 0 ? '+' : ''}{value}
-                            </span>
-                          )
-                        ))}
-                      </div>
-                    )}
-                  </button>
-                ))}
-              </div>
-            )}
-
-            {/* Ending Actions */}
-            {currentSceneData.isEnding && (
-              <div className="mt-8 flex gap-4">
-                <button
-                  onClick={() => {
-                    setCurrentScene('intro');
-                    setChoices([]);
-                    setStats({ loyalty: 50, humanity: 50, survival: 50 });
-                  }}
-                  className="flex-1 px-6 py-3 bg-amber-700 hover:bg-amber-600 text-white font-serif font-semibold rounded-lg transition-all duration-300"
-                >
-                  Play Again
-                </button>
-                <button
-                  onClick={onBack}
-                  className="flex-1 px-6 py-3 bg-stone-700 hover:bg-stone-600 text-white font-serif font-semibold rounded-lg transition-all duration-300"
-                >
-                  Choose Different Timeline
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Choice History */}
-        {choices.length > 0 && !currentSceneData.isEnding && (
-          <div className="mt-6 bg-stone-900/60 backdrop-blur-sm border border-amber-800/40 rounded-lg p-4">
-            <h3 className="text-amber-400 font-serif font-bold mb-3 text-sm">Your Journey So Far:</h3>
-            <div className="space-y-2">
-              {choices.map((choice, index) => (
-                <div key={index} className="flex items-start gap-2">
-                  <span className="text-amber-600 text-xs mt-1">▸</span>
-                  <p className="text-amber-300/70 text-xs">{choice}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
-
-      <style jsx>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
-      `}</style>
-    </div>
-  );
-};
-
-export default ExplorationStory;import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { ArrowLeft, Compass, Heart, Skull, AlertTriangle, Ship } from 'lucide-react';
 
 const ExplorationStory = ({ onBack }) => {
@@ -1550,4 +1060,491 @@ const ExplorationStory = ({ onBack }) => {
     claim_fiction: {
       title: "The Novelist's Defense",
       date: "December 1519 - Strategic Lie",
-      text: "You claim your journal is fiction, stories you're writing for entertainment. Cortés is skeptical but accepts this explanation.\n\n'Writers and their fantasies,' he mutters, returning the journal. 'Just keep them to yourself
+      text: "You claim your journal is fiction, stories you're writing for entertainment. Cortés is skeptical but accepts this explanation.\n\n'Writers and their fantasies,' he mutters, returning the journal. 'Just keep them to yourself.'\n\nYou continue recording under the guise of fiction. When you describe massacres, you call them 'dramatic scenes.' When you document broken treaties, they're 'plot twists.' The chronicle survives as fiction.\n\nBut the lie gnaws at you. Is fiction that tells truth more valuable than destroyed fact? Or have you diminished the real suffering by calling it story?",
+      isEnding: true,
+      outcome: "Your 'fictional' chronicle survived and was published in 1535 as 'Tales from the New World.' For decades, it was read as adventure fiction. Only in the 1650s did scholars realize it was thinly veiled fact. Your 'novel' became crucial historical evidence. You lived to 69, never admitting in life that your fiction was truth. After your death, your personal papers revealed the truth. Historians debate whether your strategic fiction preserved important truth or diluted historical urgency by framing atrocities as entertainment. You found a third way—not pure truth, not total silence, but truth disguised as fiction. It was clever, morally ambiguous, and ultimately preserved knowledge that might otherwise have been lost. You proved that sometimes the best way to tell dangerous truths is to pretend they're lies."
+    },
+
+    stop_warnings: {
+      title: "Retreat to Safety",
+      date: "September-November 1519 - Silence",
+      text: "You stop warning indigenous peoples. The change in your behavior is noted. Suspicion against you decreases. You survive.\n\nBut you watch communities walk into Spanish traps you could have prevented. You translate false promises knowing they're false. You see the results of your silence.\n\nThe moral weight is crushing. You've chosen survival, but at what cost to your soul?",
+      isEnding: true,
+      outcome: "You survived the conquest and lived to 61. You became a wealthy translator, respected by Spanish authorities. You married a Spanish officer and had three children. But guilt consumed you. You drank heavily, suffered nightmares, and in your final years developed a reputation for unstable behavior. On your deathbed, you confessed to a priest: 'I could have warned them. I could have saved so many. I chose my life over theirs.' The priest absolved you, but you never absolved yourself. Your children inherited your wealth but also your trauma—your eldest son became a monk dedicated to indigenous peoples, trying to atone for your choices. You proved that survival without integrity is its own form of death."
+    },
+
+    continue_warnings: {
+      title: "The Persistent Voice",
+      date: "September-December 1519 - Continuing Despite Danger",
+      text: "You continue warning indigenous peoples despite the mounting danger. Your warnings save several communities from surprise attacks. They also make Spanish conquest harder, bloodier.\n\nPedro de Alvarado finally catches you passing information to a Tlaxcalan messenger. You're arrested immediately.\n\nAt your trial, Cortés himself presides. 'María Catalina de Santos, you are charged with treason against Spain and against God. How do you plead?'\n\n'Guilty of trying to prevent genocide,' you respond. 'Not guilty of treason to humanity.'",
+      choices: [
+        {
+          text: "Accept execution with dignity",
+          next: "execution_dignity",
+          stats: { humanity: 30, survival: -100 }
+        },
+        {
+          text: "Beg for mercy and offer to serve loyally",
+          next: "beg_mercy",
+          stats: { survival: 15, humanity: -20 }
+        }
+      ]
+    },
+
+    execution_dignity: {
+      title: "Facing Death Proudly",
+      date: "December 1519 - The Execution",
+      text: "You face execution with head held high. When offered a chance to recant and beg mercy, you refuse.\n\n'I warned people who deserved warning. I resisted invasion that deserved resistance. I'm guilty of everything you accuse me of and proud of it. Do what you must.'\n\nYour execution is public, meant as a warning. Instead, it inspires some Spanish to question their mission and emboldens indigenous resistance.",
+      isEnding: true,
+      outcome: "You died at 25, executed as a traitor. Your defiant death became legend in both Spanish and indigenous accounts. Spanish authorities tried to suppress your story, calling you a madwoman, but too many had witnessed your courage. Indigenous oral traditions preserved your name and story. In the 19th century, Mexican nationalists adopted you as a symbol of resistance to imperialism. Today, you're commemorated with monuments, street names, and annual remembrances. Your execution date is observed by some as 'Day of Conscience.' You died very young, but your death meant something. You refused to beg, refused to compromise, and refused to pretend conquest was anything other than what it was. That moral clarity, even unto death, inspired generations. You proved that sometimes how you die matters as much as how you live."
+    },
+
+    beg_mercy: {
+      title: "The Plea for Life",
+      date: "December 1519 - Begging Forgiveness",
+      text: "You beg for mercy, promising to serve loyally and faithfully if spared. Cortés, seeing your genuine terror, grants clemency.\n\n'You'll live. But you'll translate in chains until you've proven yourself trustworthy again. Perhaps never.'\n\nYou've bought life at the cost of dignity and any remaining influence.",
+      isEnding: true,
+      outcome: "You lived in chains for three years, translating under guard. Eventually released in 1523, you continued as a minor translator until your death at 48. You lived in shame, knowing you'd begged when you should have stood firm. You drank heavily and suffered depression. On your deathbed, you told a priest: 'I chose life but lost the reason to live.' Your story became a cautionary tale about the cost of cowardice. Some pitied you, others scorned you, but no one respected you. You died unmourned except by family. Your gravestone bears only your name and dates—no epitaph, because no one could think of anything positive to say. You proved that survival at any cost can cost everything that makes survival worthwhile."
+    },
+
+    guarded_translator: {
+      title: "Under Guard",
+      date: "September 1519 - August 1521 - Guarded Service",
+      text: "You translate under guard for two years, until Tenochtitlan falls. You're watched constantly, your every word monitored. You have no freedom to help anyone.\n\nYou're a living tool, nothing more. The psychological toll is immense. You translate words that lead to deaths, policies that enslave peoples, orders that destroy cultures—all while unable to resist.\n\nWhen the conquest ends, you're released. You're free but broken.",
+      isEnding: true,
+      outcome: "You lived to 48, dying young from what would now be called post-traumatic stress disorder. You drank heavily, suffered nightmares, and isolated yourself from others. Your final years were spent in solitude in a small house in Veracruz. You left no children, no legacy, no chronicle. The only record of your existence is your name on a payroll document: 'María de Santos, translator, 6 pesos monthly.' You survived physically but died spiritually during those years in chains. Your story is a warning about the cost of survival when survival requires complete abandonment of principles. Sometimes living is harder than dying."
+    },
+
+    execution_principle: {
+      title: "Dying Free",
+      date: "September 1519 - The Execution",
+      text: "You refuse Cortés's offer. 'I will not help you destroy these peoples. Kill me.'\n\nCortés seems almost respectful. 'You're a fool, María. A courageous fool, but a fool nonetheless.'\n\n'Better a fool with a conscience than a success without one.'\n\nYou're executed the next morning. Your last words are in Nahuatl: 'Resist them. Unite. Don't trust Spanish promises.'",
+      isEnding: true,
+      outcome: "You died at 25, executed as a traitor. But your last words were recorded by an Aztec witness and preserved in indigenous oral traditions. They became a rallying cry for resistance movements. Spanish authorities tried to suppress your story, but it survived. After Mexican independence, you were rehabilitated as a national hero—a Spanish person who chose indigenous peoples over imperial conquest. Streets, schools, and squares bear your name. Your execution site is marked with a monument. You chose death over complicity and your death inspired generations. You lived briefly but died magnificently, standing for principles bigger than yourself. That's a life of profound meaning compressed into few years."
+    },
+
+    imprisoned_righteous: {
+      title: "Righteous Prisoner",
+      date: "November 1519 - June 1520 - Imprisonment",
+      text: "You accept imprisonment with dignity. You warned Moctezuma because it was right, and you'd do it again. From your cell, you watch Tenochtitlan descend into tension and violence.\n\nWhen the Aztec uprising occurs, Spanish blame you for their vulnerability. 'Your warning caused this!' they shout.\n\nPerhaps. Or perhaps your warning just leveled the playing field slightly. Either way, you don't regret it.",
+      isEnding: true,
+      outcome: "You were executed in June 1520 during the chaos of Spanish evacuation from Tenochtitlan. You were 26. Your warning to Moctezuma became legendary—Spanish chronicles vilified you as a traitor, but indigenous accounts honored you as one of the few Spanish who told them the truth. Your execution site in Tenochtitlan became a memorial after Mexican independence. You're now considered a proto-human rights activist, someone who believed all peoples deserved truth regardless of political allegiances. Your story is taught in Mexican schools as an example of moral courage. You chose truth over tribal loyalty and paid the ultimate price, but your example resonates across centuries. You died young but died standing for universal human dignity. That matters."
+    },
+
+    moctezuma_protection: {
+      title: "Under Imperial Protection",
+      date: "November 1519 - June 1520 - Aztec Court",
+      text: "You escape to Moctezuma's protection. The Aztec emperor is intrigued by you—a Spanish person who chose his side. You become a member of his court, advising on Spanish tactics and culture.\n\nYou live in unprecedented luxury while watching two empires clash. You're training Aztec warriors in Spanish warfare when the uprising begins.\n\nDuring the fighting, you must choose: actively fight Spanish, or just provide information and remain non-combatant?",
+      choices: [
+        {
+          text: "Take up arms and fight Spanish forces",
+          next: "fight_spanish",
+          stats: { humanity: 20, loyalty: -40, survival: -20 }
+        },
+        {
+          text: "Remain advisor only—no direct combat",
+          next: "advisor_only",
+          stats: { humanity: 15, loyalty: -25, survival: 10 }
+        }
+      ]
+    },
+
+    fight_spanish: {
+      title: "Taking Up Arms",
+      date: "June-July 1520 - In Combat",
+      text: "You take up an obsidian-bladed weapon and fight alongside Aztec warriors during the uprising. You're not skilled at combat, but you fight with fury born of guilt and determination.\n\nYou kill two Spanish soldiers—men you don't recognize. The act haunts you immediately. These are your countrymen, even if you oppose their cause.\n\nDuring Spanish evacuation, you're wounded but survive. Aztec healers treat you. You've fully committed to armed resistance.",
+      isEnding: true,
+      outcome: "You died in August 1521 during the final Spanish assault on Tenochtitlan. You were 27, killed by Spanish artillery. Your body was never identified by Spanish forces. Aztec chronicles record you as 'the Spanish woman who fought for us,' though they didn't record your name. Centuries later, historians pieced together your identity from Spanish records noting your disappearance and Aztec accounts of a Spanish woman warrior. You chose violence to resist violence. Historical debate continues about whether your choice was justified or whether you just added to the bloodshed. You proved that even conquistadors could question their side enough to switch allegiances completely. That's rare in any era. You died young, fighting for a cause that ultimately lost, but you died on your feet, weapon in hand, standing for what you believed. That counts for something."
+    },
+
+    advisor_only: {
+      title: "The Strategic Mind",
+      date: "June 1520 - August 1521 - Aztec Advisor",
+      text: "You remain a strategic advisor, providing intelligence but not personally engaging in combat. You help plan defenses, train warriors, and coordinate resistance—but you don't personally kill Spanish.\n\nThis distinction matters to you, though you recognize its moral ambiguity. You're still fighting Spanish; you're just not pulling the trigger yourself.\n\nWhen Tenochtitlan falls, you're captured along with other advisors to Aztec leadership.",
+      isEnding: true,
+      outcome: "You were tried for treason and executed in September 1521 at age 27. Your defense at trial became famous: 'I advised people defending their homes. If that's treason against Spain, then Spain itself is the traitor to justice.' Cortés had your statement stricken from official records, but scribes copied it anyway. Your trial testimony survived and influenced later debates about just war and resistance to tyranny. You were posthumously pardoned by the Mexican government in 1921, 400 years after your execution. Your distinction between advising resistance and engaging in combat was philosophically interesting but legally meaningless to Spanish courts. You died for your choices, but your ideas about justified resistance to unjust invasion influenced political philosophy for centuries. Your words outlived your body by generations."
+    },
+
+    appeal_conscience: {
+      title: "The Appeal",
+      date: "September 1519 - Speaking Truth",
+      text: "You continue your defense: 'I appeal to your consciences. Each of you came here for gold, glory, or God. But what have we actually done? We've destroyed peoples who welcomed us. We've stolen from those who shared with us. We've killed those who offered peace.\n\nIs this what you dreamed of when you signed on? Is this the legacy you want?'\n\nSilence fills the room. Some soldiers look uncomfortable. Others angry. Cortés himself seems thoughtful.",
+      choices: [
+        {
+          text: "Wait for Cortés's judgment",
+          next: "cortes_judgment",
+          stats: { humanity: 20 }
+        },
+        {
+          text: "Offer to leave expedition peacefully",
+          next: "offer_peaceful_departure",
+          stats: { humanity: 15, survival: 10 }
+        }
+      ]
+    },
+
+    accept_judgment: {
+      title: "Accepting Fate",
+      date: "September 1519 - The Verdict",
+      text: "You accept whatever judgment comes. Cortés deliberates with his officers. Some argue for execution, others for mercy. The debate lasts hours.\n\nFinally, Cortés announces: 'You will be imprisoned until the conquest is complete. Your fate will be decided then. You're too valuable to execute now, too dangerous to free.'\n\nYou're imprisoned for the duration of the conquest, watching history unfold from a cell.",
+      isEnding: true,
+      outcome: "You spent eighteen months imprisoned, released only after Tenochtitlan fell. By then, the conquest was essentially complete. Cortés granted you freedom but prohibited you from leaving New Spain. You lived in Mexico City, working as a language teacher and translator for ecclesiastical courts. You died at 52 of natural causes. Your trial testimony survived and was published in 1548, ten years after your death. It became important evidence in debates about conquest morality. You accepted judgment and survived, but you also preserved your testimony for history. That testimony influenced legal and ethical debates for centuries. You chose acceptance over resistance and your acceptance became its own form of resistance—calm testimony about injustice that couldn't be dismissed as hysteria."
+    },
+
+    cortes_judgment: {
+      title: "Cortés's Decision",
+      date: "September 1519 - The Verdict",
+      text: "Cortés deliberates with his officers. The room is tense. Finally, he speaks:\n\n'María de Santos, you've spoken boldly. Some call it treason; others might call it conscience. I'll call it impractical idealism. But you've also been valuable.\n\nYou'll remain with the expedition, but you'll translate only verified texts, under supervision. Your influence is ended, but your skills are still needed. This is mercy. Accept it.'\n\nYou've been neutered but spared.",
+      isEnding: true,
+      outcome: "You served in this diminished capacity through the conquest and into colonial administration. You lived to 56, never regaining full trust or influence. You translated legal documents, taught languages, and helped individuals where possible, but you never again shaped major events. Your trial speech survived and was published in 1537, ten years after your death. It influenced reform movements and debates about conquest morality. You lived a quiet life of reduced impact after your moment of bold truth-telling. But that moment mattered. Your speech was quoted by Las Casas, cited in the Valladolid debate, and referenced in early human rights discussions. You proved that one moment of courage can echo through history even if the rest of your life is ordinary. Your legacy is your words more than your deeds."
+    },
+
+    offer_peaceful_departure: {
+      title: "Offering to Leave",
+      date: "September 1519 - The Proposal",
+      text: "You offer to leave peacefully. 'Let me return to Spain or settle in a coastal town. I'll neither help nor hinder the conquest. Just let me go in peace.'\n\nCortés considers this. It would solve his problem without making a martyr of you. After consultation with officers, he agrees.\n\n'You may leave. But if you ever interfere with Spanish interests in the New World, the penalty is death.'\n\nYou're escorted to Veracruz and put on the next ship to Spain.",
+      isEnding: true,
+      outcome: "You returned to Seville in 1520 and lived quietly for forty-seven years, dying at 85—extraordinarily old for the era. You married, had six children, and worked as a language teacher. You wrote a memoir in your seventies that was published after your death. It provided valuable historical perspective from someone who'd witnessed conquest's beginning but chose to walk away. Your memoir influenced the debates about colonialism but from the distance of decades and an ocean. You chose peace over conflict, distance over involvement. You died old and comfortable, having avoided the violence that consumed so many. But you also avoided the meaning that comes from sustained engagement with difficult issues. Your legacy is one of principled withdrawal—admirable to some, cowardly to others. You proved that walking away is an option, but whether it's the right option remains debated."
+    },
+
+    imprisoned_peace: {
+      title: "Imprisoned for Peace",
+      date: "January-June 1520 - Prison",
+      text: "You accept imprisonment as the price of your deceptions. 'I lied to prevent violence. I'd do it again.'\n\nYour imprisonment becomes a cause célèbre among some Spanish soldiers who question conquest. Father Olmedo visits regularly, bringing food and spiritual comfort.\n\nWhen the Aztec uprising occurs, Spanish need translators desperately. They reluctantly release you, but you're no longer trusted with sensitive work.",
+      isEnding: true,
+      outcome: "You continued as a minor translator through the conquest and into the colonial period. You lived to 59, never regaining the trust you lost but never regretting your deceptions. You helped individuals where you could, translated legal documents fairly, and taught languages to both Spanish and indigenous students. At your funeral, students from both communities attended. One Nahuatl-speaking student said: 'She taught us that language can be a weapon for peace or war. She chose peace.' Your gravestone reads: 'She bent the truth to serve a higher truth.' That's an epitaph worth having. You chose strategic deception over strategic truth and your conscience was clear."
+    },
+
+    promise_faithful: {
+      title: "The Broken Spirit",
+      date: "January-August 1521 - Faithful Service",
+      text: "You promise faithful translation and keep your promise. You translate exactly what's said, no more softening, no more mercy.\n\nIndigenous leaders hear the full brutality of Spanish demands. Many resist and are crushed. You translate orders for massacres, for enslavements, for cultural destruction.\n\nYou've become exactly what Cortés always wanted: a perfect tool. But you're dead inside.",
+      isEnding: true,
+      outcome: "You lived to 43, dying of alcoholism and despair. Your final years were spent in a haze, trying to forget what you'd helped enable. You translated faithfully for twenty-four years, enabling conquest and colonization with your linguistic skills. You were well-paid and respected by Spanish authorities. But you were a ghost—technically alive, but your soul died the day you promised faithful service knowing what faithful service meant. On your deathbed, you refused last rites, saying 'I don't deserve God's mercy.' Your grave is unmarked. Even your name was misspelled on the death registry. You chose survival through submission and found that some prices are too high even for survival."
+    },
+
+    return_spain_dissident: {
+      title: "The Returned Dissident",
+      date: "1520-1542 - Back in Spain",
+      text: "You return to Spain with the dissident soldiers. In Seville, you write and speak about conquest's immorality. You ally with reform movements, support Bartolomé de las Casas, and advocate for New Laws protecting indigenous peoples.\n\nYour testimony as someone who was there carries weight. You influence the debates about colonial policy.",
+      isEnding: true,
+      outcome: "You spent twenty-two years in Spain as a prominent advocate for indigenous rights. Your testimony contributed to the New Laws of 1542, which provided legal protections for indigenous peoples in Spanish colonies. You never returned to the New World but your words shaped its governance. You died at 60, respected by reformers and hated by conquistador families who saw you as a traitor. Your writings influenced the Valladolid debate and early human rights discourse. You proved that witnessing atrocity and then speaking truth about it can shape policy for the better. Your advocacy didn't stop colonialism, but it made it less brutal than it might have been. That's significant. You chose your battles wisely and fought them effectively from a platform where your voice could be heard."
+    },
+
+    stay_advocate: {
+      title: "The Indigenous Advocate",
+      date: "1520-1556 - Lifetime of Advocacy",
+      text: "You remain in New Spain, advocating for indigenous rights within the colonial system. You translate legal codes, help indigenous communities navigate Spanish law, and push for reforms.\n\nYou never have formal power, but you have influence. You help establish legal precedents protecting some indigenous rights, preserve cultural practices through documentation, and mediate disputes.",
+      isEnding: true,
+      outcome: "You lived to 74, one of the longest-lived figures from the conquest era. You became 'La Defensora'—the defender—known throughout New Spain as an advocate for indigenous peoples. You helped hundreds of communities negotiate better terms with Spanish authorities, preserved countless indigenous customs through careful documentation, and trained a generation of indigenous legal advocates. At your funeral, both the Archbishop and indigenous community leaders eulogized you. You were buried in Mexico City, and your grave became a pilgrimage site for indigenous peoples seeking justice. You proved that one person working within a flawed system can still make a real difference over a sustained lifetime of effort. You didn't destroy the colonial system, but you made it survivable for many who otherwise wouldn't have made it. That's a legacy of genuine compassion and effectiveness."
+    },
+
+    continue_sabotage: {
+      title: "The Persistent Saboteur",
+      date: "April-July 1520 - Sabotage Escalates",
+      text: "You escalate your sabotage: poisoning supplies, releasing prisoners, misdirecting troops, destroying gunpowder stores. Each act is risky. Each risks discovery.\n\nPedro de Alvarado finally catches you red-handed, setting fire to a supply depot. There's no talking your way out this time. You're arrested for treason and sabotage.\n\nCortés is furious. 'You've cost us hundreds of men with your sabotage. You'll be executed as an example.'",
+      choices: [
+        {
+          text: "Face execution with pride in your resistance",
+          next: "proud_execution",
+          stats: { humanity: 30, survival: -100 }
+        },
+        {
+          text: "Try one last escape attempt",
+          next: "final_escape_attempt",
+          stats: { humanity: 20, survival: -50 }
+        }
+      ]
+    },
+
+    escape_before_caught: {
+      title: "The Timely Escape",
+      date: "July 1520 - Fleeing Before Capture",
+      text: "You sense Alvarado is closing in. Before he can act, you flee Tenochtitlan during the chaos of the 'Noche Triste,' when Spanish are expelled from the city.\n\nYou disappear into the confusion, eventually finding shelter with Tlaxcalan communities who remember your earlier help. You live among them as Spanish regroup for their final assault.",
+      isEnding: true,
+      outcome: "You lived among the Tlaxcalans for thirty-three years, dying at 61. You married a Tlaxcalan noble, had four children, and became a respected elder. Your sabotage activities were never fully discovered by Spanish authorities. You lived a quiet life, teaching languages and helping your adopted community navigate colonial rule. Your children became important cultural bridges. On your deathbed, you told your eldest daughter about your sabotage work. She preserved your story, which was eventually written down in the 1580s. Your memoir, discovered in the 20th century, revealed you'd conducted one of the most effective resistance campaigns of the conquest era. You delayed Spanish advances, saved hundreds of lives, and escaped justice to live peacefully. You proved that sometimes the best revenge is living well after effective resistance."
+    },
+
+    proud_execution: {
+      title: "Defiant Until the End",
+      date: "July 1520 - The Final Stand",
+      text: "You face execution proudly. 'I sabotaged an unjust invasion. I'm a hero, not a traitor. History will vindicate me even if you execute me.'\n\nCortés shakes his head. 'History is written by victors. No one will remember you, María.'\n\n'You're wrong. Truth outlives power. Someone will remember. Someone will tell my story.'\n\nYou're executed the next morning, defiant to the end.",
+      isEnding: true,
+      outcome: "Cortés was wrong. Your story survived in multiple accounts—Spanish records of your treason, indigenous oral traditions of your resistance, and most importantly, a journal you'd hidden that was discovered in 1680. Your sabotage campaign, documented in your journal, was revealed to have been far more extensive than Spanish authorities ever knew. You'd delayed conquest by months, saved hundreds of lives, and inspired other resisters. Modern historians call you one of the most effective resistance fighters of the conquest era. Monuments to you exist in Mexico, and your story is taught in schools as an example of resistance to tyranny. You died at 26, but your defiant last words—'Truth outlives power'—proved prophetic. You're remembered not despite your execution, but because of how you faced it."
+    },
+
+    final_escape_attempt: {
+      title: "The Last Gambit",
+      date: "July 1520 - Desperate Flight",
+      text: "You attempt one final escape during the confusion of your impending execution. You're wounded in the attempt but manage to flee the Spanish camp.\n\nYou survive three days in the jungle before dying of your wounds and infection. Tlaxcalan villagers find your body and give you a proper burial.",
+      isEnding: true,
+      outcome: "Your body was buried by Tlaxcalans who recognized you as someone who'd tried to help indigenous peoples. They buried you with honor, marking your grave with both Christian cross and indigenous symbols. Your final escape attempt became legendary—'the woman who chose freedom in death over captivity in life.' Your grave became a pilgrimage site for people resisting oppression. Songs were written about your final days in the jungle, wounded and alone but free. You died at 26, but you died as you'd lived your final months—resisting conquest with everything you had. Your choice to die free rather than live in chains inspired others facing similar choices. You proved that the manner of death can be its own statement of values. Your last act of defiance became your most remembered."
+    },
+
+    record_again: {
+      title: "Defiant Documentation",
+      date: "January-August 1520 - Recording Resumes",
+      text: "You begin chronicling again, more carefully hidden this time. You write in smaller script, use better codes, hide pages in multiple locations.\n\nYour new chronicle is even more detailed than the first. You're documenting not just events but your emotional journey, the moral compromises, the human cost of conquest on all sides.\n\nThis time, you successfully protect your work. It survives.",
+      isEnding: true,
+      outcome: "Your second chronicle survived and was even more powerful than the first. Combined with your burned first journal (of which you'd kept fragmentary copies), your documentation became the most comprehensive account of conquest from a morally conflicted participant. Published in 1547, five years after your death at 65, it influenced generations of historians and ethicists. Your chronicle is taught in universities worldwide as a primary source on conquest and a meditation on complicity, resistance, and moral choice in impossible circumstances. You proved that persistence matters—even when your first attempt is destroyed, you can start again. Your refusal to be silenced became as important as what you documented. You died knowing your truth would outlive attempts to suppress it."
+    },
+
+    direct_help: {
+      title: "From Words to Actions",
+      date: "January-July 1521 - Direct Service",
+      text: "You stop chronicling and focus on direct help: treating wounded, sheltering refugees, teaching survival skills, mediating disputes. You can't change conquest, but you can ease individual suffering.\n\nYou establish a small hospital in Texcoco. You treat Aztec, Spanish, and Tlaxcalan wounded impartially. Some call you a saint. Others call you a traitor. You don't care—you're just reducing suffering where you can.",
+      isEnding: true,
+      outcome: "Your hospital in Texcoco operated for twenty-eight years, treating thousands. You died at 56 of disease caught from a patient. Your hospital continued operating for another century, eventually becoming the Hospital Real de Indios. You never documented your work, so you're barely mentioned in historical records. But oral traditions in Texcoco remember 'María the Healer' who treated everyone equally. Your great-granddaughter, researching family history in 1603, compiled testimonies about you and sent them to Spain. They survive in a monastery archive. You chose action over documentation, immediate help over historical record. Most historians don't know your name, but thousands of people lived because of you. That's a trade many would accept."
+    },
+
+    quiet_individual_help: {
+      title: "Small Acts of Kindness",
+      date: "October 1519 - July 1528 - Quiet Service",
+      text: "From the margins, you help individuals where you can: warning people of danger, providing food to refugees, treating the wounded, teaching survival skills.\n\nYou're never important enough to make big changes, but you help dozens, then hundreds of individuals. Each person you help is a victory against conquest's dehumanization.",
+      isEnding: true,
+      outcome: "You lived to 66, dying peacefully surrounded by people you'd helped over the years. Your funeral was attended by Spanish and indigenous people alike—individuals you'd assisted, refugees you'd fed, wounded you'd treated. No monuments were built to you, no streets named after you, but hundreds of people lived better lives because you'd been in the world. Your great-granddaughter compiled oral histories about you in 1590. The stories describe a woman who 'helped everyone quietly, asked for nothing, and left the world gentler than she found it.' That's a legacy better than gold or glory. You chose individual kindness over grand gestures and proved that sustained compassion matters more than dramatic heroism."
+    },
+
+    leave_entirely: {
+      title: "Walking Away",
+      date: "November 1519 - Complete Departure",
+      text: "You leave the expedition entirely. No imprisonment, no conflict—you simply walk away. Cortés lets you go, glad to be rid of a problematic translator.\n\nYou settle in a small coastal village, far from conquest's front lines. You teach languages, work as a translator for merchants, and live quietly. You hear news of the conquest but are no longer part of it.\n\nYou've chosen peace and distance over involvement.",
+      isEnding: true,
+      outcome: "You lived to 71 in your coastal village, dying peacefully of old age. You married a local fisherman, had three children, and lived a quiet, unremarkable life. You taught Spanish and indigenous languages to traders, helping facilitate peaceful commerce rather than conquest. Your life was ordinary, comfortable, and untroubled—which is itself an achievement in conquest times. You're not remembered by history. No chronicles mention you. But you lived well, loved deeply, and died peacefully. Sometimes the greatest wisdom is knowing when to walk away. You chose a quiet life over a meaningful death, and you never regretted it. Your descendants still live in that coastal town, unaware of what you walked away from."
+    }
+  };
+
+  const currentSceneData = scenes[currentScene];
+
+  if (!currentSceneData) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-amber-950 via-stone-900 to-black flex items-center justify-center">
+        <div className="text-white text-center p-8">
+          <Skull className="w-16 h-16 text-amber-400 mx-auto mb-4" />
+          <p className="text-xl mb-4">Scene not found: {currentScene}</p>
+          <button 
+            onClick={onBack} 
+            className="px-6 py-3 bg-amber-700 hover:bg-amber-600 rounded-lg transition-all"
+          >
+            Return to Timeline
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-amber-950 via-stone-900 to-black relative overflow-hidden">
+      {/* Decorative exploration elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 left-10 text-9xl">⚔️</div>
+        <div className="absolute bottom-10 right-10 text-9xl">🌎</div>
+        <div className="absolute top-1/2 right-1/4 text-6xl">⛵</div>
+      </div>
+
+      {/* Stats Panel */}
+      <div className="fixed top-4 right-4 bg-stone-900/90 backdrop-blur-sm border-2 border-amber-800/60 rounded-lg p-4 z-20 w-64">
+        <h3 className="text-amber-400 font-serif font-bold mb-3 text-center">Your Character</h3>
+        
+        <div className="space-y-3">
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-amber-300 text-sm flex items-center gap-2">
+                <Ship className="w-4 h-4" />
+                Loyalty
+              </span>
+              <span className="text-amber-200 text-sm font-bold">{stats.loyalty}%</span>
+            </div>
+            <div className="w-full bg-stone-800 rounded-full h-2">
+              <div 
+                className="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 rounded-full transition-all duration-500"
+                style={{ width: `${stats.loyalty}%` }}
+              />
+            </div>
+          </div>
+
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-amber-300 text-sm flex items-center gap-2">
+                <Heart className="w-4 h-4" />
+                Humanity
+              </span>
+              <span className="text-amber-200 text-sm font-bold">{stats.humanity}%</span>
+            </div>
+            <div className="w-full bg-stone-800 rounded-full h-2">
+              <div 
+                className="bg-gradient-to-r from-rose-600 to-red-600 h-2 rounded-full transition-all duration-500"
+                style={{ width: `${stats.humanity}%` }}
+              />
+            </div>
+          </div>
+
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-amber-300 text-sm flex items-center gap-2">
+                <Compass className="w-4 h-4" />
+                Survival
+              </span>
+              <span className="text-amber-200 text-sm font-bold">{stats.survival}%</span>
+            </div>
+            <div className="w-full bg-stone-800 rounded-full h-2">
+              <div 
+                className="bg-gradient-to-r from-green-600 to-emerald-600 h-2 rounded-full transition-all duration-500"
+                style={{ width: `${stats.survival}%` }}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-4 pt-3 border-t border-amber-800/40">
+          <p className="text-amber-400/70 text-xs text-center italic">
+            What will history remember?
+          </p>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 container mx-auto px-4 py-8 max-w-4xl">
+        {/* Back Button */}
+        <button
+          onClick={onBack}
+          className="flex items-center gap-2 text-amber-300 hover:text-amber-100 transition-colors mb-6"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          <span>Return to Timeline</span>
+        </button>
+
+        {/* Story Card */}
+        <div className="bg-stone-900/80 backdrop-blur-sm border-2 border-amber-800/60 rounded-lg overflow-hidden shadow-2xl">
+          {/* Header */}
+          <div className="bg-gradient-to-r from-amber-900 to-orange-900 p-6 border-b-2 border-amber-800/60">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-3">
+                <Compass className="w-8 h-8 text-amber-300" />
+                <div>
+                  <h2 className="text-3xl font-serif font-bold text-amber-300">
+                    {currentSceneData.title}
+                  </h2>
+                  <p className="text-amber-400/80 text-sm italic">{currentSceneData.date}</p>
+                </div>
+              </div>
+              {currentSceneData.isEnding && (
+                <div className="flex items-center gap-2 bg-amber-700/30 px-3 py-1 rounded-full">
+                  <Skull className="w-4 h-4 text-amber-300" />
+                  <span className="text-amber-300 text-sm font-bold">Ending</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Story Text */}
+          <div className="p-8">
+            <div className="prose prose-invert max-w-none">
+              {currentSceneData.text.split('\n\n').map((paragraph, index) => (
+                <p key={index} className="text-amber-100 text-lg leading-relaxed mb-4 font-serif">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+
+            {/* Ending Outcome */}
+            {currentSceneData.isEnding && currentSceneData.outcome && (
+              <div className="mt-8 p-6 bg-amber-900/20 border-2 border-amber-700/50 rounded-lg">
+                <div className="flex items-start gap-3">
+                  <AlertTriangle className="w-6 h-6 text-amber-400 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-amber-300 font-serif font-bold text-xl mb-2">Your Legacy</h3>
+                    <p className="text-amber-200 leading-relaxed">
+                      {currentSceneData.outcome}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Choices */}
+            {!currentSceneData.isEnding && currentSceneData.choices && (
+              <div className="mt-8 space-y-4">
+                <div className="flex items-center gap-2 text-amber-400 font-serif font-bold">
+                  <span className="text-lg">Choose your path:</span>
+                </div>
+                {currentSceneData.choices.map((choice, index) => (
+                  <button
+                    key={index}
+                    onClick={() => makeChoice(choice.next, choice.text, choice.stats)}
+                    className="w-full text-left p-5 bg-gradient-to-r from-stone-800/50 to-amber-950/30 hover:from-amber-900/40 hover:to-orange-900/40 border-2 border-amber-800/40 hover:border-amber-600 rounded-lg transition-all duration-300 group"
+                  >
+                    <p className="text-amber-200 group-hover:text-amber-100 font-serif leading-relaxed">
+                      {choice.text}
+                    </p>
+                    {choice.stats && Object.keys(choice.stats).length > 0 && (
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {Object.entries(choice.stats).map(([stat, value]) => (
+                          value !== 0 && (
+                            <span 
+                              key={stat}
+                              className={`text-xs px-2 py-1 rounded-full ${
+                                value > 0 
+                                  ? 'bg-green-900/40 text-green-300' 
+                                  : 'bg-red-900/40 text-red-300'
+                              }`}
+                            >
+                              {stat.charAt(0).toUpperCase() + stat.slice(1)}: {value > 0 ? '+' : ''}{value}
+                            </span>
+                          )
+                        ))}
+                      </div>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {/* Ending Actions */}
+            {currentSceneData.isEnding && (
+              <div className="mt-8 flex gap-4">
+                <button
+                  onClick={() => {
+                    setCurrentScene('intro');
+                    setChoices([]);
+                    setStats({ loyalty: 50, humanity: 50, survival: 50 });
+                  }}
+                  className="flex-1 px-6 py-3 bg-amber-700 hover:bg-amber-600 text-white font-serif font-semibold rounded-lg transition-all duration-300"
+                >
+                  Play Again
+                </button>
+                <button
+                  onClick={onBack}
+                  className="flex-1 px-6 py-3 bg-stone-700 hover:bg-stone-600 text-white font-serif font-semibold rounded-lg transition-all duration-300"
+                >
+                  Choose Different Timeline
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Choice History */}
+        {choices.length > 0 && !currentSceneData.isEnding && (
+          <div className="mt-6 bg-stone-900/60 backdrop-blur-sm border border-amber-800/40 rounded-lg p-4">
+            <h3 className="text-amber-400 font-serif font-bold mb-3 text-sm">Your Journey So Far:</h3>
+            <div className="space-y-2">
+              {choices.map((choice, index) => (
+                <div key={index} className="flex items-start gap-2">
+                  <span className="text-amber-600 text-xs mt-1">▸</span>
+                  <p className="text-amber-300/70 text-xs">{choice}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      <style jsx>{`
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+      `}</style>
+    </div>
+  );
+};
+
+export default ExplorationStory;
